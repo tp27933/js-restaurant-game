@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<link rel="stylesheet" href="./index.css">
+<link rel="stylesheet" href="./rules.css">
+
+<body>
+  <div>
+    <audio id="backgorund_music"  src="./music/Restaurant city music.mp3" style="height: 0;" autoplay="autoplay"  loop="loop" controls="controls">
+    </audio>
+    <audio id="moneySound"  src="./music/pay money sounds.mp3" style="height: 0;">
+    </audio>
+
+  </div>
+  
+ <div class="alert">
+<div class="rules_wrap"> </div>
+  <div class="rlues_base">
+    <h1>餐廳遊戲</h1>
+    <p>在這裡當自己的老闆吧 ! 你是一家餐廳營運者為客人點單上菜，
+      記得招聘廚師，忙不過來時可以招聘多個廚師來幫忙喔。
+      操作順序為 : <br/>
+      點擊座位為客人代位，客人點完菜後 -> 點擊廚師做菜 ->
+      上菜後讓客人享用並記得最後收取費用喔!<br/>
+      要注意時間，可別讓客人等太久囉! <br/>
+      現在，為你的目標設定一個營業額吧</p>
+      
+    <input type="text" class="goalIncom"> 元</input>
+    <span class="alert_goalIncom"> 請輸入3000~5000的範圍</span>
+    <button class="enter">確認</button>
+  </div>
+</div> 
+</div>
+  <div class="main">
+    <nav class='clearfix'>
+
+      <div id='display_income' class='display_income'>
+       <p> 總收入 :<span> 0</span></p> 
+      </div>
+    </nav>
+
+    <div class="cookArea clearfix">
+      <div class="circle clearfix">
+        <ul id='cookAreaCircle' class="cookAreaCircle clearfix">
+          <!-- <li>
+            <img src='./img/chief.png' class='cook'>
+            <span>
+              <span class='fill'></span>
+              <i>綜合生魚片</i>
+            </span>
+          </li> -->
+        </ul>
+      </div>
+      <div id='addCircle' class='addCheif'>
+
+        <img src="./img/chief.png" alt="">
+
+        <span> +</span>
+      </div>
+    </div>
+
+    <div id='seatArea' class=" seatArea">
+
+      <div id='seat_1' class="seat">
+        <!-- 
+          <div class="fram">
+            <span class="animation_1"></span>
+            <span class="animation_2"></span>
+            <span class="animation_3"></span>
+            <span class="trangle_down"></span>
+          </div>-->
+        <div id="menu" class="menu_wrap">
+          <ul class="menu">
+            <!-- 
+          <li>
+          <div class='item'>
+          <span class='fill'></span>
+         <i>綜合生魚片</i>
+             </div>  
+        </li>
+        -->
+          </ul>
+        </div>
+        <div id='circle' class="circle">
+          <img src="" alt="" class='profile'>
+        </div>
+      </div>
+      <div id='seat_2' class="seat">
+        <div id="menu" class="menu_wrap">
+          <ul class="menu">
+
+          </ul>
+        </div>
+        <div class="circle">
+          <img src="" alt="" class='profile'>
+        </div>
+      </div>
+      <div id='seat_3' class="seat">
+        <div id="menu" class="menu_wrap">
+          <ul class="menu">
+
+          </ul>
+        </div>
+        <div class="circle">
+          <img src="" alt="" class='profile'>
+        </div>
+      </div>
+      <div id='seat_4' class="seat">
+        <div id="menu" class="menu_wrap">
+          <ul class="menu">
+
+          </ul>
+        </div>
+        <div class="circle">
+          <img src="" alt="" class='profile'>
+        </div>
+      </div>
+      <div id='waiting' class="waiting">
+        <img src="./img/gust.png" class="custom">
+        <img src="./img/gust_2.png" class="custom">
+        <img src="./img/gust_3.png" class="custom">
+      </div>
+    </div>
+  </div>
+
+
+  <!-- <img src="../../圖片/餐廳素材/serve.png" alt="" class="waiter"> -->
+</body>
+
+
+<script  src="./object.js"></script>
+<script src="./index.js"></script>
+<script src="./serveIcon_class.js"></script>
+<script src="./cook_class.js"></script>
+
+
+</html>
