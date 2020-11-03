@@ -104,6 +104,9 @@ class CookWorking {
   }
 
   addNewCook () {
+    if(totalCook.length===4){
+      return;
+    }
     const newCook = document.createElement('li');
     newCook.innerHTML = ' <img src="./img/chief.png" alt="" class=\'cook\'>';
     const radomBackground = colorSetting[getRandom(4, 0)].split('/');
