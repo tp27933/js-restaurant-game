@@ -6,10 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 <link rel="stylesheet" href="./index.css">
 <link rel="stylesheet" href="./rules.css">
+<link rel="stylesheet" href="media.css">
 
 <body>
+  <div id="iamtest"></div>
   <div>
     <audio id="backgorund_music"  src="./music/Restaurant city music.mp3" style="height: 0;" autoplay="autoplay"  loop="loop" controls="controls">
     </audio>
@@ -17,8 +20,8 @@
     </audio>
 
   </div>
-  
- <div class="alert">
+
+ <div class="rules">
 <div class="rules_wrap"> </div>
   <div class="rlues_base">
     <h1>餐廳遊戲</h1>
@@ -58,15 +61,13 @@
       </div>
       <div id='addCircle' class='addCheif'>
 
-        <img src="./img/chief.png" alt="">
-
         <span> +</span>
       </div>
     </div>
 
     <div id='seatArea' class=" seatArea">
-
-      <div id='seat_1' class="seat">
+<div class="row">
+      <div id='seat_1' class="seat col-lg-3 col-sm-3">
         <!-- 
           <div class="fram">
             <span class="animation_1"></span>
@@ -74,7 +75,12 @@
             <span class="animation_3"></span>
             <span class="trangle_down"></span>
           </div>-->
-        <div id="menu" class="menu_wrap">
+          <div class="row">
+       
+        <div id='circle' class="circle col-8 col-md-8">
+          <img src="" alt="" class='profile'>
+        </div>
+        <div id="menu" class="menu_wrap col-4 col-md-4">
           <ul class="menu">
             <!-- 
           <li>
@@ -86,40 +92,90 @@
         -->
           </ul>
         </div>
-        <div id='circle' class="circle">
+      </div>
+      </div>
+      <div id='seat_2' class="seat col-lg-3 col-sm-3">
+        <!-- 
+          <div class="fram">
+            <span class="animation_1"></span>
+            <span class="animation_2"></span>
+            <span class="animation_3"></span>
+            <span class="trangle_down"></span>
+          </div>-->
+          <div class="row">
+       
+        <div id='circle' class="circle col-8">
           <img src="" alt="" class='profile'>
         </div>
-      </div>
-      <div id='seat_2' class="seat">
-        <div id="menu" class="menu_wrap">
+        <div id="menu" class="menu_wrap col-4">
           <ul class="menu">
-
+            <!-- 
+          <li>
+          <div class='item'>
+          <span class='fill'></span>
+         <i>綜合生魚片</i>
+             </div>  
+        </li>
+        -->
           </ul>
         </div>
-        <div class="circle">
+      </div>
+      </div>
+      <div id='seat_3' class="seat col-lg-3 col-sm-3">
+        <!-- 
+          <div class="fram">
+            <span class="animation_1"></span>
+            <span class="animation_2"></span>
+            <span class="animation_3"></span>
+            <span class="trangle_down"></span>
+          </div>-->
+          <div class="row">
+       
+        <div id='circle' class="circle col-8">
           <img src="" alt="" class='profile'>
         </div>
-      </div>
-      <div id='seat_3' class="seat">
-        <div id="menu" class="menu_wrap">
+        <div id="menu" class="menu_wrap col-4">
           <ul class="menu">
-
+            <!-- 
+          <li>
+          <div class='item'>
+          <span class='fill'></span>
+         <i>綜合生魚片</i>
+             </div>  
+        </li>
+        -->
           </ul>
         </div>
-        <div class="circle">
+      </div>
+      </div>
+      <div id='seat_4' class="seat col-lg-3 col-sm-3">
+        <!-- 
+          <div class="fram">
+            <span class="animation_1"></span>
+            <span class="animation_2"></span>
+            <span class="animation_3"></span>
+            <span class="trangle_down"></span>
+          </div>-->
+          <div class="row">
+       
+        <div id='circle' class="circle col-8">
           <img src="" alt="" class='profile'>
         </div>
-      </div>
-      <div id='seat_4' class="seat">
-        <div id="menu" class="menu_wrap">
+        <div id="menu" class="menu_wrap col-4">
           <ul class="menu">
-
+            <!-- 
+          <li>
+          <div class='item'>
+          <span class='fill'></span>
+         <i>綜合生魚片</i>
+             </div>  
+        </li>
+        -->
           </ul>
         </div>
-        <div class="circle">
-          <img src="" alt="" class='profile'>
-        </div>
       </div>
+      </div>
+    </div>
       <div id='waiting' class="waiting">
         <img src="./img/gust.png" class="custom">
         <img src="./img/gust_2.png" class="custom">
@@ -132,7 +188,8 @@
   <!-- <img src="../../圖片/餐廳素材/serve.png" alt="" class="waiter"> -->
 </body>
 
-
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 <script  src="./object.js"></script>
 <script src="./index.js"></script>
 <script src="./serveIcon_class.js"></script>

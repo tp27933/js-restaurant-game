@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-const div = document.querySelector('.alert');
+const div = document.querySelector('.rules');
 const seatArea = document.getElementById('seatArea');
 
 const gameRules = {
@@ -35,7 +35,7 @@ const colorSetting = [
 const totalOrder = [];
 // 彈出提示框
 // click ->客人，廚師 ，吃飯，收錢
-(function () {
+/*(function () {
   const btn = document.querySelector('.enter');
   const alert = document.querySelector('.alert_goalIncom');
   const input = document.querySelector('.goalIncom');
@@ -44,14 +44,14 @@ const totalOrder = [];
       alert.className = 'alert_active';
       return;
     }
-div.style.display = 'none'
+
     gameRules.setGoal = input.value;
 
     soundEffect('backgorund_music');
     setInterval(newGuest, 5000);
   });
-}());
-
+}());*/
+div.style.display = 'none'
 seatArea.addEventListener('click', (e) => {
   const { target } = e;
   const picExit = target.getAttribute('src');
@@ -95,6 +95,7 @@ class CookWorking {
     this.addCircle.onclick = this.addNewCook;
     for (let i = 0; i < this.li.length; i++) {
       this.li[i].index = i;
+      
       this.li[i].onclick = this.working;
     }
   }
@@ -118,6 +119,7 @@ class CookWorking {
   }
 
   working () {
+    
     // 這裡的this指向為li，this.index則調用init裡的this.li[i].index = i以此知道點擊哪個li;
     const thisW = this;
     // 從總cook裡面找出點擊的廚師

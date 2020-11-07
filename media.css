@@ -1,0 +1,98 @@
+#iamtest{
+  position: absolute;
+  width: 100px; 
+  height: 100px;
+  background-color: red;
+}
+@media (max-width: 575.98px) { 
+  #iamtest{
+    background-color: purple;
+  }
+  .main{
+    width: 100%;
+    font-size: 12px;
+  }
+  .display_income{
+    width: 80%;
+  }
+  .col-8{
+    padding: 0;
+    padding-left: 10px;
+  }
+  .cookAreaCircle li {
+    margin-right: 8px;
+    margin-top: 3px;
+  }
+  .addCheif {
+    width: 110px;
+    height: 110px;
+  }
+  img{
+    width: 120px;
+  }
+  .seatArea .circle .profile {
+    height: 180px;
+  }
+ }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+  .main{
+    width: 100%;
+  }
+  #iamtest{
+    background-color: blue;
+  }
+  .cookAreaCircle li {
+    margin-right: 5px;
+  }
+  .addCheif {
+    width: 85px;
+    height: 85px;
+  }
+  img{
+    width: 75px;
+  }
+
+ }
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #iamtest{
+    background-color: green;
+  }
+  .cookAreaCircle li {
+    margin-right: 10px;
+  }
+  .addCheif {
+    width: 90px;
+    height: 90px;
+  }
+  img{
+    width: 80px;
+  }
+ }
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+  .addCheif {
+    width: 115px;
+    height: 115px;
+  }
+  img{
+    width: 100px;
+  }
+  #iamtest{
+    background-color: blue;
+  }
+ }
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+  #iamtest{
+    background-color: black;
+  }
+  img{
+    height: 130px;
+  }
+ }
