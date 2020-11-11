@@ -8,6 +8,10 @@
   #iamtest{
     background-color: purple;
   }
+  .rlues_base >p {
+    font-size: 12px;
+    line-height: 17px;
+  }
   .main{
     width: 100%;
     font-size: 12px;
@@ -30,8 +34,17 @@
   img{
     width: 120px;
   }
+  .seat{
+    margin-top: 15px;
+  }
+  .menu li .item {
+    width: 150px;
+    height: 40px;
+    margin-top: 0px;
+    font-size: 20px;
+  }
   .seatArea .circle .profile {
-    height: 180px;
+    height: 165px;
   }
  }
 
@@ -39,9 +52,14 @@
 @media (min-width: 576px) and (max-width: 767.98px) { 
   .main{
     width: 100%;
+    padding-right: 0;
   }
   #iamtest{
     background-color: blue;
+  }
+  .rlues_base >p {
+    font-size: 14px;
+    line-height: 30px;
   }
   .cookAreaCircle li {
     margin-right: 5px;
@@ -49,6 +67,9 @@
   .addCheif {
     width: 85px;
     height: 85px;
+  }
+  ul.menu{
+    left:-60px;
   }
   img{
     width: 75px;
@@ -61,6 +82,12 @@
   #iamtest{
     background-color: green;
   }
+  .main{
+    width: 100%;
+  }
+  .col-md-9,.col-md-3{
+    padding-right: 0;
+  }
   .cookAreaCircle li {
     margin-right: 10px;
   }
@@ -68,8 +95,25 @@
     width: 90px;
     height: 90px;
   }
+  .seatArea{
+    padding: 30px 10px;
+  }
+  .seatArea .circle .profile {
+    height: 100px;
+  }
+  .item i{
+    font-size: 12px;
+  }
   img{
     width: 80px;
+  }
+  ul.menu{
+    left:-55px;
+  }
+  .menu li .item {
+    width: 75px;
+    height: 30px;
+    margin-top: 0px;
   }
  }
 
@@ -83,7 +127,7 @@
     width: 100px;
   }
   #iamtest{
-    background-color: blue;
+    background-color: pink;
   }
  }
 

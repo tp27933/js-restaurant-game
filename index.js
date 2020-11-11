@@ -35,7 +35,7 @@ const colorSetting = [
 const totalOrder = [];
 // 彈出提示框
 // click ->客人，廚師 ，吃飯，收錢
-/*(function () {
+(function () {
   const btn = document.querySelector('.enter');
   const alert = document.querySelector('.alert_goalIncom');
   const input = document.querySelector('.goalIncom');
@@ -45,13 +45,13 @@ const totalOrder = [];
       return;
     }
 
+    div.style.display = 'none'
     gameRules.setGoal = input.value;
 
     soundEffect('backgorund_music');
     setInterval(newGuest, 5000);
   });
-}());*/
-div.style.display = 'none'
+}());
 seatArea.addEventListener('click', (e) => {
   const { target } = e;
   const picExit = target.getAttribute('src');
