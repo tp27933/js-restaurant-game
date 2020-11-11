@@ -44,10 +44,8 @@ const totalOrder = [];
       alert.className = 'alert_active';
       return;
     }
-
     div.style.display = 'none'
     gameRules.setGoal = input.value;
-
     soundEffect('backgorund_music');
     setInterval(newGuest, 5000);
   });
