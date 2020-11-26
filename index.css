@@ -234,7 +234,7 @@ li{
   }
   .seatArea .circle {
         position: relative;
-
+        width: 110px;
   }
  .seatArea .circle .profile{
     width: 100%;

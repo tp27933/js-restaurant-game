@@ -55,13 +55,18 @@ const countRevenue = {
     gameRules.gameOver(totalIncome.innerText);
   },
   remove (el) {
-    el.table.closest('div.seat').innerHTML = ` <div id="menu" class="menu_wrap">
-    <ul class="menu">
-    </ul>
-    </div>
-    <div class="circle">
-      <img src="" alt="" class='profile'>
-    </div>`;
+    el.table.closest('div.seat').innerHTML = `
+    <div class="row">
+       
+        <div id='circle' class="circle col-lg-8 col-md-8 col-8">
+          <img src="" alt="" class='profile'>
+        </div>
+        <div id="menu" class="menu_wrap col-lg-4 col-md-4 col-4">
+          <ul class="menu">
+          </ul>
+          </div>
+        </div>
+    `;
   }
 
 };
